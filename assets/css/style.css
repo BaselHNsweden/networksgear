@@ -49,7 +49,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu>li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -59,7 +59,7 @@ h1 {
 /* Navbar styles with dropdown toggle */ 
 nav {
     position: absolute;
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     left:0;
     padding: 0 1rem;
@@ -67,7 +67,7 @@ nav {
     display: none;
     top: 100%;
 }
-/* Nav toggle*/
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -89,10 +89,10 @@ main {
 footer {
     background-color: orange;
 }
-/*Medis query: tablets and larger ( 768px and up)*/
+/* Medis query: tablets and larger ( 768px and up) */
 @media screen and (min-width: 768px) {
-    /*Header*/
-    nav{
+    /* Header */
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
@@ -114,7 +114,13 @@ footer {
         margin: 0 0.5rem;
     }
     main {
-        /* Push main down to accommodate larger header */
+        /* Push content down to accommodate larger header */
         margin-top: 79px;
+    }
+}
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
     }
 }
