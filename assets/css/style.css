@@ -36,13 +36,27 @@ header {
 
 }
 
+
 h1 {
     font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
+    text-decoration: none;
 }
-/*main */
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+
+}
+#menu > li {
+    margin-top: 1em;
+}
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+/*main content */
 main {
     background-color: lightblue;
     /* make main element take up any surplus space to push footer down */
